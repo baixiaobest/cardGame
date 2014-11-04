@@ -14,6 +14,11 @@
 		A9DE135419D12A3C00E0EC7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DE135319D12A3C00E0EC7D /* Images.xcassets */; };
 		A9DE135719D12A3C00E0EC7D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DE135519D12A3C00E0EC7D /* LaunchScreen.xib */; };
 		A9DE136319D12A3C00E0EC7D /* cardGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE136219D12A3C00E0EC7D /* cardGameTests.m */; };
+		A9DE136F19D12B4000E0EC7D /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE136E19D12B4000E0EC7D /* Card.m */; };
+		A9DE137419D12BC400E0EC7D /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE137319D12BC400E0EC7D /* Deck.m */; };
+		A9DE137719D1396E00E0EC7D /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE137619D1396E00E0EC7D /* PlayingCard.m */; };
+		A9DE137A19D14B3800E0EC7D /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE137919D14B3800E0EC7D /* PlayingCardDeck.m */; };
+		A9DE137D19D317D100E0EC7D /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE137C19D317D100E0EC7D /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		A9DE135C19D12A3C00E0EC7D /* cardGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cardGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE136119D12A3C00E0EC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9DE136219D12A3C00E0EC7D /* cardGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cardGameTests.m; sourceTree = "<group>"; };
+		A9DE136E19D12B4000E0EC7D /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = models/Card.m; sourceTree = SOURCE_ROOT; };
+		A9DE137119D12B8F00E0EC7D /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Card.h; path = models/Card.h; sourceTree = SOURCE_ROOT; };
+		A9DE137219D12BAB00E0EC7D /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = models/Deck.h; sourceTree = SOURCE_ROOT; };
+		A9DE137319D12BC400E0EC7D /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = models/Deck.m; sourceTree = SOURCE_ROOT; };
+		A9DE137519D1392700E0EC7D /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = models/PlayingCard.h; sourceTree = SOURCE_ROOT; };
+		A9DE137619D1396E00E0EC7D /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = models/PlayingCard.m; sourceTree = SOURCE_ROOT; };
+		A9DE137819D14B1300E0EC7D /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = models/PlayingCardDeck.h; sourceTree = SOURCE_ROOT; };
+		A9DE137919D14B3800E0EC7D /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		A9DE137C19D317D100E0EC7D /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = models/CardMatchingGame.m; sourceTree = SOURCE_ROOT; };
+		A9DE137E19D317E900E0EC7D /* CardMatchingGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = models/CardMatchingGame.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,7 @@
 				A9DE135319D12A3C00E0EC7D /* Images.xcassets */,
 				A9DE135519D12A3C00E0EC7D /* LaunchScreen.xib */,
 				A9DE134619D12A3C00E0EC7D /* Supporting Files */,
+				A9DE137B19D14B5900E0EC7D /* model */,
 			);
 			path = cardGame;
 			sourceTree = "<group>";
@@ -117,6 +133,23 @@
 				A9DE136119D12A3C00E0EC7D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9DE137B19D14B5900E0EC7D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A9DE137E19D317E900E0EC7D /* CardMatchingGame.h */,
+				A9DE137C19D317D100E0EC7D /* CardMatchingGame.m */,
+				A9DE137119D12B8F00E0EC7D /* Card.h */,
+				A9DE136E19D12B4000E0EC7D /* Card.m */,
+				A9DE137219D12BAB00E0EC7D /* Deck.h */,
+				A9DE137319D12BC400E0EC7D /* Deck.m */,
+				A9DE137519D1392700E0EC7D /* PlayingCard.h */,
+				A9DE137619D1396E00E0EC7D /* PlayingCard.m */,
+				A9DE137819D14B1300E0EC7D /* PlayingCardDeck.h */,
+				A9DE137919D14B3800E0EC7D /* PlayingCardDeck.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DE137719D1396E00E0EC7D /* PlayingCard.m in Sources */,
+				A9DE137419D12BC400E0EC7D /* Deck.m in Sources */,
 				A9DE134F19D12A3C00E0EC7D /* ViewController.m in Sources */,
 				A9DE134C19D12A3C00E0EC7D /* AppDelegate.m in Sources */,
+				A9DE137D19D317D100E0EC7D /* CardMatchingGame.m in Sources */,
+				A9DE137A19D14B3800E0EC7D /* PlayingCardDeck.m in Sources */,
 				A9DE134919D12A3C00E0EC7D /* main.m in Sources */,
+				A9DE136F19D12B4000E0EC7D /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,8 +382,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cardGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,8 +394,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = cardGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

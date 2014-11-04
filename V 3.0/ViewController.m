@@ -20,12 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-
-@property (weak, nonatomic) IBOutlet UILabel *controlMessage;
-
-
-
 @end
 
 @implementation ViewController
@@ -36,9 +30,15 @@
     return _game;
 }
 
+/*- (void) setFlipCount:(int)flipCount
+{
+    _flipCount = flipCount;
+    self.flips.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
+}*/
+
 - (IBAction)flipCard:(UIButton *)sender
 {
-    NSUInteger index = [self.cardButtons indexOfObject:sender];
+    int index = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:index];
     [self updateUI];
 }
@@ -47,13 +47,12 @@
 {
     for(UIButton* cardButton in self.cardButtons)
     {
-        NSUInteger cardIndex = [self.cardButtons indexOfObject:cardButton];
+        int cardIndex = [self.cardButtons indexOfObject:cardButton];
         Card *card = [self.game cardAtIndex:cardIndex];
         [cardButton setTitle:[self titleForCard:card]  forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
-        self.controlMessage.text = self.game.message;
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     }
 }
 
@@ -77,19 +76,5 @@
 {
     return [[PlayingCardDeck alloc] init];
 }
-
-- (IBAction)redeal:(UIButton *)sender
-{
-    _deck = nil;
-    _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:self.deck];
-    [self updateUI];
-    self.segmentedControl.selectedSegmentIndex = 0;
-}
-
-- (IBAction)setMode:(UISegmentedControl *)sender
-{
-    self.game.threeCardsMode = [sender selectedSegmentIndex];
-}
-
 
 @end
