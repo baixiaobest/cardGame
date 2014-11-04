@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4gZ-zo-8uk">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Playing Card Game View Controller-->
+        <!--Game-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="PlayingCardGameViewController" sceneMemberID="viewController">
@@ -17,16 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl2-QZ-Muf">
-                                <rect key="frame" x="11" y="20" width="57" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" backgroundImage="cardBack">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="evT-nr-PB3"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrE-7e-BwD">
                                 <rect key="frame" x="11" y="496" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -83,16 +73,6 @@
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wM4-xt-vgq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU9-cB-iyw">
-                                <rect key="frame" x="71" y="20" width="57" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" backgroundImage="cardBack">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KRJ-ag-9VE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aun-WM-S3t">
                                 <rect key="frame" x="71" y="95" width="57" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -141,16 +121,6 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wPx-9o-Zxy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnD-fK-MK7">
-                                <rect key="frame" x="132" y="20" width="57" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" backgroundImage="cardBack">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gox-dh-GEA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cc-hX-jBK">
@@ -203,16 +173,6 @@
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Miq-bD-dSw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-4Q-VZ9">
-                                <rect key="frame" x="192" y="20" width="57" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" backgroundImage="cardBack">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b9a-tv-gbN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCK-R0-PUr">
                                 <rect key="frame" x="192" y="95" width="57" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -261,16 +221,6 @@
                                 </state>
                                 <connections>
                                     <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q5c-fl-eoZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIP-jb-gvu">
-                                <rect key="frame" x="252" y="20" width="57" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" backgroundImage="cardBack">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="flipCard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sZd-K9-nui"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmM-In-hkZ">
@@ -333,8 +283,8 @@
                                     <action selector="setMode:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Qam-qt-eaT"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClP-tN-JxQ">
-                                <rect key="frame" x="16" y="527" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClP-tN-JxQ">
+                                <rect key="frame" x="16" y="527" width="233" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -350,19 +300,24 @@
                                     <action selector="redeal:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dIG-3g-9FT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGd-aL-Ox3">
+                                <rect key="frame" x="272" y="523" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CFQ-PJ-guL" kind="push" identifier="NewGame" id="KhT-Di-pZD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0012600952908838319" green="0.60925542091836737" blue="0.0019550625427289569" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.12120574569594189" green="0.68200960874077554" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Game" id="ZMk-Gr-3NR"/>
                     <connections>
                         <outlet property="controlMessage" destination="ClP-tN-JxQ" id="KSI-iJ-uLa"/>
                         <outlet property="scoreLabel" destination="WrE-7e-BwD" id="oVO-V6-fFQ"/>
                         <outlet property="segmentedControl" destination="06Q-FT-EiU" id="LLs-C8-S6v"/>
-                        <outletCollection property="cardButtons" destination="cl2-QZ-Muf" id="CKR-7u-yUw"/>
-                        <outletCollection property="cardButtons" destination="tU9-cB-iyw" id="wPz-ci-6uG"/>
-                        <outletCollection property="cardButtons" destination="qnD-fK-MK7" id="bYJ-iT-XTb"/>
-                        <outletCollection property="cardButtons" destination="bhb-4Q-VZ9" id="0Mn-WG-dKI"/>
-                        <outletCollection property="cardButtons" destination="VIP-jb-gvu" id="IGX-Vg-vK9"/>
                         <outletCollection property="cardButtons" destination="aem-gz-HXB" id="R1y-lW-Qfo"/>
                         <outletCollection property="cardButtons" destination="Aun-WM-S3t" id="8Ac-yW-NO3"/>
                         <outletCollection property="cardButtons" destination="4cc-hX-jBK" id="xtO-UW-SfC"/>
@@ -391,6 +346,43 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="336"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yU4-32-j2W">
+            <objects>
+                <viewController id="CFQ-PJ-guL" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bgt-NM-Wnr"/>
+                        <viewControllerLayoutGuide type="bottom" id="tk3-fD-khQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="00J-QC-nM6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZSV-Hx-hDA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T0A-MR-xty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="340"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s77-0S-jVj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4gZ-zo-8uk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="43p-uL-o3X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="cXQ-t0-U3U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5oR-I0-W5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42" y="336"/>
         </scene>
