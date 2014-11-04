@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9CAD0421A08ACE5008740C1 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CAD0411A08ACE5008740C1 /* PlayingCardGameViewController.m */; };
 		A9DE134919D12A3C00E0EC7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE134819D12A3C00E0EC7D /* main.m */; };
 		A9DE134C19D12A3C00E0EC7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE134B19D12A3C00E0EC7D /* AppDelegate.m */; };
 		A9DE134F19D12A3C00E0EC7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DE134E19D12A3C00E0EC7D /* ViewController.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9CAD0411A08ACE5008740C1 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardGameViewController.m; sourceTree = "<group>"; };
+		A9CAD0431A08AD05008740C1 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardGameViewController.h; sourceTree = "<group>"; };
 		A9DE134319D12A3C00E0EC7D /* cardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DE134719D12A3C00E0EC7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9DE134819D12A3C00E0EC7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				A9DE134B19D12A3C00E0EC7D /* AppDelegate.m */,
 				A9DE134D19D12A3C00E0EC7D /* ViewController.h */,
 				A9DE134E19D12A3C00E0EC7D /* ViewController.m */,
+				A9CAD0431A08AD05008740C1 /* PlayingCardGameViewController.h */,
+				A9CAD0411A08ACE5008740C1 /* PlayingCardGameViewController.m */,
 				A9DE135019D12A3C00E0EC7D /* Main.storyboard */,
 				A9DE135319D12A3C00E0EC7D /* Images.xcassets */,
 				A9DE135519D12A3C00E0EC7D /* LaunchScreen.xib */,
@@ -260,6 +265,7 @@
 				A9DE137A19D14B3800E0EC7D /* PlayingCardDeck.m in Sources */,
 				A9DE134919D12A3C00E0EC7D /* main.m in Sources */,
 				A9DE136F19D12B4000E0EC7D /* Card.m in Sources */,
+				A9CAD0421A08ACE5008740C1 /* PlayingCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +460,7 @@
 				A9DE136819D12A3C00E0EC7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9DE136919D12A3C00E0EC7D /* Build configuration list for PBXNativeTarget "cardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +469,7 @@
 				A9DE136B19D12A3C00E0EC7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
