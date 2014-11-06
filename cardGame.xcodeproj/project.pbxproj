@@ -99,8 +99,6 @@
 		A9DE134519D12A3C00E0EC7D /* cardGame */ = {
 			isa = PBXGroup;
 			children = (
-				A9DE134A19D12A3C00E0EC7D /* AppDelegate.h */,
-				A9DE134B19D12A3C00E0EC7D /* AppDelegate.m */,
 				A9DE134D19D12A3C00E0EC7D /* ViewController.h */,
 				A9DE134E19D12A3C00E0EC7D /* ViewController.m */,
 				A9CAD0431A08AD05008740C1 /* PlayingCardGameViewController.h */,
@@ -117,6 +115,8 @@
 		A9DE134619D12A3C00E0EC7D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9DE134A19D12A3C00E0EC7D /* AppDelegate.h */,
+				A9DE134B19D12A3C00E0EC7D /* AppDelegate.m */,
 				A9DE134719D12A3C00E0EC7D /* Info.plist */,
 				A9DE134819D12A3C00E0EC7D /* main.m */,
 			);
